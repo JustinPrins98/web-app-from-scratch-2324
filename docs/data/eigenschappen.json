@@ -1,0 +1,16 @@
+{
+    "eend": {
+        "naam": "Justin",
+        "leeftijd": 175,
+        "eendenNaam": "Kwekker",
+        "karakter": "jolig",
+        "woonVijver": "Vijver Van Emiclaer",
+        "favorieteBrood": "Tijgerbrood",
+        "kwikKwekKwak": "Kwek",
+        "favorieteDoelwit": {
+            "doelwit1": "Gerard Joling",
+            "doelwit2": "Bryan Prins",
+            "doelwit3": "Lars van Veldhuizen"
+        }
+    }
+}
