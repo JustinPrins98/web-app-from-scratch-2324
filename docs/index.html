@@ -13,21 +13,23 @@
 <body>
     <nav>
         <h1>Justin Prins</h1>
+        <img src="./images/zij-eend-icon.png" alt="Icoon van een eend" id="clickableNavImage">
     </nav>
 
 
-    <section>
-        <img src="images/eend.png" alt="">
-        <h2>MCduck</h2>
+    <section class="section1">
+        <h2>Mcduck</h2>
+        <img src="images/eend.png" id="deEend" alt="Vooraanzicht van een rode bad eend met één oog">
+        <div id="output"></div>
         <ul>
-            <button><img src="./images/duck.png" alt="">Leeftijd in eendenjaren</button>
-            <button><img src="./images/vijver.png" alt="">Buurtvijver</button>
-            <button><img src="./images/brood.png" alt="">Favoriet brood</button>
-            <button><img src="./images/smiley.png" alt="">Karakter</button>
+            <button id="showAge"><img src="./images/duck.png" alt="Rode eend"></button>
+            <button id="showPond"><img src="./images/vijver.png" alt="Blauwe vijver"></button>
+            <button id="showBread"><img src="./images/brood.png" alt="Stuk brood"></button>
+            <button id="showCharacter"><img src="./images/smiley.png" alt="Smiley"></button>
         </ul>
     </section>
 
-    <section>
+    <section class="section2">
         <h2>Wie is deze eend?</h2>
         <p>Ontmoet Mcduck, de rode eend met één oog en een passie voor McDonald's! Altijd op zoek naar het perfecte
             'McMoment', deelt Mcduck zijn enthousiasme voor frietjes en hamburgers met vrienden. Zijn levensmotto? "Make
@@ -40,14 +42,25 @@
         <button>Kwik Kwek of kwak?</button>
     </section>
 
-    <section>
-        <h3> top 3 poepers</h3>
-        <ul>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </ul>
-    </section>
+    <div class="container">
+        <h3>Top 3 personen waarop ik zou poepen</h3>
+        <!-- Section with the podium chart -->
+        <section class="podium-section">
+            <div class="podium">
+                <div class="podium-item" id="thirdPlace"><img src="./images/hamilton.gif" alt="">
+                    <p>Lewis hamilton</p>
+                </div>
+                <div class="podium-item" id="secondPlace"><img src="./images/gerard.gif" alt="">
+                    <p>Gerard Joling</p>
+                </div>
+                <div class="podium-item" id="firstPlace"> <img src="./images/gordon.gif" alt="">
+                    <p>gordon</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer></footer>
 
 </body>
 
