@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0;
+    font-family: 'inter';
 }
 
 /* root */
@@ -146,16 +147,27 @@ nav img {
 /* Style for the item on the right */
 .right-itemSection2 {
     grid-column: span 1;
-    background-color: red;
-    /* The item on the right spans 1 column */
     padding: 20px;
     margin: 0;
+    background-color: #FFD700;
+    border: solid 5px #d91212;
+    border-radius: 3em;
 }
+
+.right-itemSection2:hover {
+    grid-column: span 1;
+    padding: 20px;
+    margin: 0;
+    background-color: #c0951f;
+    border: solid 5px #d91212;
+    border-radius: 3em;
+}
+
 
 /* section 3 */
 
 .container {
-    height: 100vh;
+    height: 80vh;
     /* Adjust this value based on your content */
 }
 
