@@ -1,5 +1,5 @@
 html {
-    background-color: var(--Hoofdkleur-geel);
+    background-color: var(--Hoofdkleur-rood);
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 
 :root {
-    --Hoofdkleur-geel: #d94412;
+    --Hoofdkleur-rood: #d94412;
 }
 
 
@@ -20,7 +20,8 @@ body {
 h1 {
     color: rgb(226, 226, 226);
     text-align: center;
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-top: .75em;
 }
 
 h2 {
@@ -60,8 +61,25 @@ section:nth-of-type(1) button:hover {
     cursor: pointer;
 }
 
+section:nth-of-type(1) button:hover span {
+    opacity: 1;
+    color: yellow;
+}
+
+section:nth-of-type(1) button span {
+    position: absolute;
+    transform: translate(-50%, -300%);
+    opacity: 0;
+    color: yellow;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+
+
 section:nth-of-type(1) ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-right: auto;
     margin-bottom: 1em;
@@ -81,13 +99,14 @@ nav {
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
     /* Apply box shadow */
 }
 
 nav img {
     height: 2.5em;
-    margin-right: 2em;
-    margin-top: .8em;
+    margin-right: 1.5em;
+    margin-top: .75em;
 }
 
 
@@ -95,7 +114,7 @@ nav img {
 /*section 1*/
 
 .section1 {
-    background-color: #4ea7d8;
+    background-color: #333;
     padding-top: 6em;
     padding-bottom: 0em;
     margin-bottom: 2em;
@@ -114,15 +133,21 @@ nav img {
 }
 
 .section1 div {
-    color: red;
     text-align: center;
     padding: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2em;
+}
+
+.section1 div p {
+    background-color: purple;
 }
 
 
 .section2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     /* Three columns on the left */
     grid-template-rows: auto;
     gap: 20px;
@@ -163,6 +188,12 @@ nav img {
     border-radius: 3em;
 }
 
+.right-imageSection2 {
+    grid-column: span 3;
+    width: 40%;
+    padding: 3em;
+}
+
 
 /* section 3 */
 
@@ -177,23 +208,24 @@ nav img {
 }
 
 .podium-section {
-    height: 40vh;
+    height: 50vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .podium {
     display: flex;
+    flex-wrap: wrap;
     gap: 3em;
 }
 
 .podium-item {
-    width: 15em;
     height: 12em;
     color: #fff;
     text-align: center;
-    margin: 0 10px;
+    margin: 10px 10px;
     transition: transform 1s ease-in-out;
 }
 
@@ -218,10 +250,25 @@ nav img {
 /* footer */
 
 footer {
-    width: 100%;
-    background-color: red;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 footer p {
     margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

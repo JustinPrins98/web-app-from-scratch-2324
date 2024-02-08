@@ -25,12 +25,17 @@
         <section class="section1">
             <h2>Mcduck</h2>
             <img src="images/eend.png" id="deEend" alt="Vooraanzicht van een rode bad eend met één oog">
-            <div id="output"></div>
+            <div>
+                <p id="output"></p>
+            </div>
             <ul>
-                <button id="showAge"><img src="./images/duck.png" alt="Rode eend"></button>
-                <button id="showPond"><img src="./images/vijver.png" alt="Blauwe vijver"></button>
-                <button id="showBread"><img src="./images/brood.png" alt="Stuk brood"></button>
-                <button id="showCharacter"><img src="./images/smiley.png" alt="Smiley"></button>
+                <button id="showAge"><span> Eendenleeftijd</span><img src="./images/duck.png" alt="Rode eend"></button>
+                <button id="showPond"><span> Favoriete vijver</span><img src="./images/vijver.png"
+                        alt="Blauwe vijver"></button>
+                <button id="showBread"><span> Favoriet brood</span><img src="./images/brood.png"
+                        alt="Stuk brood"></button>
+                <button id="showCharacter"><span> Mijn karakter</span><img src="./images/smiley.png"
+                        alt="Smiley"></button>
             </ul>
         </section>
 
@@ -49,7 +54,10 @@
                 verschijning. Een eend die liever snackt dan kwakt, want "Waarom quacken als je kunt snacken?"
                 Onvergetelijk
                 en energiek, Mcduck maakt elke dag smaakvol met zijn liefde voor fastfood.</p>
-            <button class="right-itemSection2">Kwik Kwek of kwak?</button>
+            <button class="right-itemSection2" id="getRandomDuck">
+                <span>Random eend</span>
+            </button>
+            <img class="right-imageSection2" id="duckImage" alt="Random Duck Image">
         </section>
 
         <div class="container">

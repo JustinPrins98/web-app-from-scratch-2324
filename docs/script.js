@@ -1,48 +1,25 @@
-// Specify the URL of the JSON file
-// const jsonFileUrl = 'https://justinprins98.github.io/web-app-from-scratch-2324/data/eigenschappen.json';
-
-// // Use the Fetch API to get the JSON data
-// fetch(jsonFileUrl)
-//     .then(response => {
-//         // Check if the response is successful (status code 200-299)
-//         if (!response.ok) {
-//             throw new Error(`Network response was not ok: ${response.statusText}`);
-//         }
-//         // Parse the JSON from the response
-//         return response.json();
-//     })
-//     .then(data => {
-//         // Handle the JSON data
-//         console.log(data);
-//     })
-//     .catch(error => {
-//         // Handle any errors that occurred during the fetch
-//         console.error('Error during fetch:', error);
-//     });
-
-
 const outputDiv = document.getElementById("output");
 const showAgeButton = document.getElementById("showAge");
 const showPondButton = document.getElementById("showPond");
 const showBreadButton = document.getElementById("showBread");
 const showCharacterButton = document.getElementById("showCharacter");
 
-console.log(outputDiv);
+let currentKey = null;
 
 showAgeButton.addEventListener("click", function () {
-    displayData("leeftijd");
+    toggleDisplayData("leeftijd");
 });
 
 showPondButton.addEventListener("click", function () {
-    displayData("woonVijver");
+    toggleDisplayData("woonVijver");
 });
 
 showBreadButton.addEventListener("click", function () {
-    displayData("favorieteBrood");
+    toggleDisplayData("favorieteBrood");
 });
 
 showCharacterButton.addEventListener("click", function () {
-    displayData("karakter");
+    toggleDisplayData("karakter");
 });
 
 function fetchData() {
@@ -56,12 +33,43 @@ function fetchData() {
         .catch(error => console.error('Error fetching JSON:', error));
 }
 
-function displayData(key) {
-    fetchData().then(data => {
-        outputDiv.textContent = data.eend[key];
-    })
-        .catch(error => console.error('Error fetching JSON:', error));
+function toggleDisplayData(key) {
+    if (currentKey === key) {
+        // If the button is clicked again, hide the data
+        outputDiv.textContent = '';
+        currentKey = null;
+    } else {
+        // Otherwise, show the data for the clicked button
+        fetchData().then(data => {
+            outputDiv.textContent = data.eend[key];
+            currentKey = key;
+        })
+            .catch(error => console.error('Error fetching JSON:', error));
+    }
 }
+
+// API duck images //
+document.getElementById("getRandomDuck").addEventListener("click", function () {
+    getRandomDuck();
+});
+const accessKey = 'p8vkhfImFC407jjPmnQRpwm1Y8st34RAIq8Fi6bsdQ8'
+function getRandomDuck() {
+
+    // Make a request to the Unsplash API
+    fetch(`https://api.unsplash.com/photos/random?query=duck&client_id=${accessKey}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const duckUrl = data.urls.regular;
+            document.getElementById("duckImage").src = duckUrl;
+        })
+        .catch(error => console.error('Error fetching duck image:', error));
+}
+
 
 
 
