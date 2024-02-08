@@ -97,7 +97,7 @@ nav img {
     background-color: #4ea7d8;
     padding-top: 6em;
     padding-bottom: 0em;
-    height: 80vh;
+    margin-bottom: 2em;
 }
 
 #deEend {
@@ -118,68 +118,39 @@ nav img {
     padding: 2em;
 }
 
-/*section 2*/
-
-/*.section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    flex-wrap: wrap;
-    width: 80vw;
-    height: 35vh;
-    background: #d56038;
-    padding: 2em;
-    margin: auto;
-    margin-top: 2em;
-} */
 
 .section2 {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 0px 0px;
-    width: 80vw;
-    height: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns on the left */
+    grid-template-rows: auto;
+    gap: 20px;
+    /* Adjust the gap between items */
     background: #d56038;
-    padding: 2em;
+    width: 90%;
     margin: auto;
-    margin-top: 2em;
-    grid-template-areas: "test test3"
-        "test2 test4";
+    padding: 3em;
 }
 
-.section2 h2 {
-    grid-area: test;
-}
+/* Style for items on the left */
+.left-itemSection2 {
+    grid-column: span 2;
 
-.section2 .p:nth-of-type(1) {
-    grid-area: test2;
-}
-
-.section2 .p:nth-of-type(2) {
-    grid-area: test3;
-}
-
-.section2 button {
-    grid-area: test4;
-}
-
-/* .section2 h2 {
-    width: calc(50% - 1em);
-    margin: 0.5em 0 0 0;
-}
-
-.section2 p {
+    /* Each item on the left spans 2 columns */
+    padding: 0px;
     margin: 0;
-    width: calc(50% - 1em);
+    margin-left: 2em;
+    width: 80%;
 }
 
-.section2 button {
-    width: 20%;
-    height: 15%;
-    background: yellow;
-    margin-top: 9em;
-} */
+/* Style for the item on the right */
+.right-itemSection2 {
+    grid-column: span 1;
+    background-color: red;
+    /* The item on the right spans 1 column */
+    padding: 20px;
+    margin: 0;
+}
 
 /* section 3 */
 
@@ -236,6 +207,9 @@ nav img {
 
 footer {
     width: 100%;
-    height: 30%;
     background-color: red;
+}
+
+footer p {
+    margin: 0;
 }
