@@ -135,8 +135,9 @@ nav img {
     color: rgb(0 0 0);
     text-align: center;
     background-color: #35353552;
-    width: 30%;
-    font-size: 3rem;
+    min-width: 5em;
+    max-width: 35%;
+    font-size: 3em;
     border-radius: 2em;
     margin-top: 0;
     margin-left: auto;
@@ -160,6 +161,7 @@ nav img {
 .section1 figure {
     display: flex;
     flex-wrap: wrap;
+    gap: .5em;
     justify-content: center;
     text-align: center;
     margin-top: 0;
@@ -169,16 +171,19 @@ nav img {
 }
 
 .section1 figcaption {
-    background-color: white;
+    background-color: #d94412;
+    border-radius: 1em;
+    border: solid 5px #FFD700;
     width: 5em;
     height: 3em;
     padding: 1em;
+    align-self: center;
 }
 
 .section1 figcaption p {
-    color: #333;
-    margin: auto;
-
+    color: white;
+    margin: 0;
+    line-height: 3em;
 }
 
 .section2 {
@@ -316,6 +321,17 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Media */
+
+@media only screen and (max-width:800px) {
+    .section1 h2 {
+        color: rgb(0 0 0);
+        font-size: 3rem;
+
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
