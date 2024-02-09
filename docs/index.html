@@ -24,10 +24,12 @@
     <main>
         <section class="section1">
             <h2>Mcduck</h2>
-            <img src="images/eend.png" id="deEend" alt="Vooraanzicht van een rode bad eend met één oog">
-            <div>
-                <p id="output"></p>
-            </div>
+            <figure>
+                <img src="images/eend.png" id="deEend" alt="Vooraanzicht van een rode bad eend met één oog">
+                <figcaption>
+                    <p id="output"></p>
+                </figcaption>
+            </figure>
             <ul>
                 <button id="showAge"><span> Eendenleeftijd</span><img src="./images/duck.png" alt="Rode eend"></button>
                 <button id="showPond"><span> Favoriete vijver</span><img src="./images/vijver.png"
@@ -40,24 +42,32 @@
         </section>
 
         <section class="section2">
-            <h2 class="left-itemSection2">Wie is deze eend?</h2>
-            <p class="left-itemSection2">Ontmoet Mcduck, de rode eend met één oog en een passie voor McDonald's! Altijd
-                op
-                zoek naar het perfecte
-                'McMoment', deelt Mcduck zijn enthousiasme voor frietjes en hamburgers met vrienden. Zijn levensmotto?
-                "Make
-                Every Moment a McMoment!" Mcduck nodigt iedereen uit voor spontane McDonald's-uitjes en gelooft in de
-                balans
-                tussen lekker eten en actief blijven.</p>
+            <article>
+                <h2>Wie is deze eend?</h2>
+                <p> Ontmoet Mcduck, de rode eend met één oog en een passie voor McDonald's! Altijd
+                    op
+                    zoek naar het perfecte
+                    'McMoment', deelt Mcduck zijn enthousiasme voor frietjes en hamburgers met vrienden. Zijn
+                    levensmotto?
+                    "Make
+                    Every Moment a McMoment!" Mcduck nodigt iedereen uit voor spontane McDonald's-uitjes en gelooft in
+                    de
+                    balans
+                    tussen lekker eten en actief blijven.</p>
 
-            <p class="left-itemSection2">Met zijn wijd open oog en kwakend van opwinding is hij een vrolijke
-                verschijning. Een eend die liever snackt dan kwakt, want "Waarom quacken als je kunt snacken?"
-                Onvergetelijk
-                en energiek, Mcduck maakt elke dag smaakvol met zijn liefde voor fastfood.</p>
-            <button class="right-itemSection2" id="getRandomDuck">
-                <span>Random eend</span>
-            </button>
-            <img class="right-imageSection2" id="duckImage" alt="Random Duck Image">
+                <p>Met zijn wijd open oog en kwakend van opwinding is hij een vrolijke
+                    verschijning. Een eend die liever snackt dan kwakt, want "Waarom quacken als je kunt snacken?"
+                    Onvergetelijk
+                    en energiek, Mcduck maakt elke dag smaakvol met zijn liefde voor fastfood.</p>
+            </article>
+            <figure><img id="duckImage" alt="Random Duck Image">
+                <figcaption>
+                    <button id="getRandomDuck">
+                        <span>Random eend</span>
+                    </button>
+                </figcaption>
+            </figure>
+
         </section>
 
         <div class="container">
@@ -72,7 +82,7 @@
                         <p>Gerard Joling</p>
                     </div>
                     <div class="podium-item" id="firstPlace"> <img src="./images/gordon.gif" alt="">
-                        <p>gordon</p>
+                        <p>Gordon</p>
                     </div>
                 </div>
             </section>

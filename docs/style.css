@@ -82,8 +82,8 @@ section:nth-of-type(1) ul {
     flex-wrap: wrap;
     justify-content: center;
     margin-right: auto;
-    margin-bottom: 1em;
-    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-top: 3.5em;
     padding-inline-start: 0px;
 }
 
@@ -118,13 +118,29 @@ nav img {
     padding-top: 6em;
     padding-bottom: 0em;
     margin-bottom: 2em;
+    background-image: url(./images/vijver.jpg);
+    background-size: cover;
+    background-position: top;
 }
 
-#deEend {
-    max-width: 25%;
+.section1 h2 {
+    color: rgb(0 0 0);
+    text-align: center;
+    background-color: #35353552;
+    width: 30%;
+    font-size: 3rem;
+    border-radius: 2em;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section1 img {
+.section1 #deEend {
+    max-width: 75%;
+}
+
+
+.section1 ul img {
     max-width: 75%;
     height: auto;
     display: block;
@@ -132,67 +148,85 @@ nav img {
     margin-right: auto;
 }
 
-.section1 div {
+
+.section1 figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    padding: 2em;
+    margin-top: 0;
     padding-left: 0;
     padding-right: 0;
     font-size: 2em;
 }
 
-.section1 div p {
-    background-color: purple;
+.section1 figcaption {
+    background-color: white;
+    width: 20%;
+    margin-left: 1em;
+    padding: 2em;
 }
 
+.section1 figcaption p {
+    color: #333;
+    width: 50%;
+    padding: 2em;
+}
 
 .section2 {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    /* Three columns on the left */
-    grid-template-rows: auto;
-    gap: 20px;
-    /* Adjust the gap between items */
-    background: #d56038;
-    width: 90%;
-    margin: auto;
-    padding: 3em;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #d96a45;
 }
 
-/* Style for items on the left */
-.left-itemSection2 {
-    grid-column: span 2;
 
-    /* Each item on the left spans 2 columns */
-    padding: 0px;
-    margin: 0;
+
+
+.section2 h2 {
+    text-align: left;
     margin-left: 2em;
-    width: 80%;
 }
 
-/* Style for the item on the right */
-.right-itemSection2 {
-    grid-column: span 1;
-    padding: 20px;
-    margin: 0;
-    background-color: #FFD700;
-    border: solid 5px #d91212;
-    border-radius: 3em;
+.section2 p {
+    text-align: left;
+    margin-left: 3em;
+
 }
 
-.right-itemSection2:hover {
-    grid-column: span 1;
-    padding: 20px;
-    margin: 0;
+.section2 article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.section2 figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.section2 img {
+    background-color: cyan;
+    background-color: cyan;
+    width: 90%;
+    height: 20em;
+    margin-left: 2em;
+    display: block;
+    object-fit: cover;
+
+}
+
+.section2 button {
     background-color: #c0951f;
-    border: solid 5px #d91212;
-    border-radius: 3em;
+    width: 45%;
+    margin-left: 30%;
+    margin-top: 2em;
 }
 
-.right-imageSection2 {
-    grid-column: span 3;
-    width: 40%;
-    padding: 3em;
-}
+
 
 
 /* section 3 */
@@ -271,4 +305,22 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .section2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section2 article {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section2 figure {
+        width: 100%;
+    }
 }
