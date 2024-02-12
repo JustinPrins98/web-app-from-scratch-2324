@@ -1,7 +1,7 @@
 # Documentatie persoonlijke eenden website Justin Prins
 
-## 1. Introductie (#Introductie)
-## 2. HTML Structuur (#htmlStructuur)
+## 1. Introductie [#Introductie]
+## 2. HTML Structuur [#htmlStructuur]
 ## 3. CSS Stylinng
 ## 4. JavaScript
 ## 5. Aanvullingen
