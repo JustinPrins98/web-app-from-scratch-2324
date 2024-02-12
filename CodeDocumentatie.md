@@ -41,22 +41,19 @@ Flexboxes: Voorheen gebruikte ik niet zo vaak flexboxen en was ik slecht in het 
 
 Media Queries: Media Queries heb ik nooit eerder toegepast in CSS. Dit keer moest ik het wel gebruiken omdat ik op een bepaald breakpoint de tekst onder elkaar moest krijgen. Dit heeft geholpen om de pagina responsive te krijgen en heeft mij de basis van media queries geleerd.
 
-Hover states: Om buttons
+Hover states: Om buttons te stylen wanneer je erover heen hoverd.
 
 Wat ik de volgende keer anders kan doen.
-- costum variable
-- benamingen
-The CSS file (style.css) is organized with various sections to style different elements. Key styling points include:
+costum variables en benamingen: De volgende keer wil ik costum variabelen toevoegen om makkelijker de styling aan te passen eventueel een darkmode toe te voegen. Ook wil ik mijn classnames verbeteren om mijn CSS meer structuur te geven waardoor het voor mij en voor anderen overzichtelijker wordt.
 
-Background color for the HTML and body.
-Styling for headings (h1, h2, h3, h6) and paragraphs (p).
-Styling for buttons, navigation bar, and podium section.
-Responsive design using media queries for different screen sizes.
 ### 4. JavaScript
-The JavaScript file (script.js) contains logic for fetching data from an external JSON file, toggling the display of information based on button clicks, and fetching random duck images from the Unsplash API. It also includes a scroll event listener to animate the podium section when scrolled into view.
+De jS bevat een functie die data van een externe JSON file ophaalt. De data wordt weeregeven door op buttons te klikken. 
+
+Ook bevat het een functie die ervoor zorgt dat er willekeurige eenden foto's verschijnen wanneer je op een specefieke button klikt. Deze foto's komen vanuit een Unsplash API. 
+
+De javascript bevat ook een scroll event listener om de 3e sectie te animeren wanneer het in beeld komt.
 
 ### 5. Aanvullingen
-The code includes comments for better readability.
-External libraries or frameworks are not used; the web app is built with HTML, CSS, and vanilla JavaScript.
-The project relies on external data, specifically a JSON file for character properties and the Unsplash API for random duck images.
-Feel free to expand and customize this documentation based on your specific needs and additional details about the project.
+De code bevat comments om de overzichtelijkheid te bevorderen.
+De Web app is gebouwd met HTML, CSS en vanilla JavaScript.
+De Web app maakt gebruik van externa data zoals JSON files en een Unsplash API.
