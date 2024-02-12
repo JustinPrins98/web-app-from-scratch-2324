@@ -1,10 +1,11 @@
-Web App Documentation
-Table of Contents
-Introduction
-HTML Structure
-CSS Styling
-JavaScript Logic
-Additional Notes
+# Documentatie Justin Prins
+
+## Introductie
+## HTML Structuur
+## CSS Stylinng
+## JavaScript
+## Aanvullingen
+
 1. Introduction<a name="introduction"></a>
 This document provides documentation for the codebase of the "Web App From Scratch 23-24". The web app features a personal page for "Justin Prins" and introduces a character named "Mcduck". It includes sections displaying information about the character, a podium section with top individuals, and a footer with contact details.
 
