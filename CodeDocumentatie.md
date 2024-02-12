@@ -1,15 +1,15 @@
-# Documentatie Justin Prins
+# Documentatie persoonlijke eenden website Justin Prins
 
-## Introductie
-## HTML Structuur
-## CSS Stylinng
-## JavaScript
-## Aanvullingen
+## 1. Introductie
+## 2. HTML Structuur
+## 3. CSS Stylinng
+## 4. JavaScript
+## 5. Aanvullingen
 
-1. Introduction<a name="introduction"></a>
+### 1. Introduction<a name="Introductie"></a>
 This document provides documentation for the codebase of the "Web App From Scratch 23-24". The web app features a personal page for "Justin Prins" and introduces a character named "Mcduck". It includes sections displaying information about the character, a podium section with top individuals, and a footer with contact details.
 
-2. HTML Structure<a name="html-structure"></a>
+### 2. HTML Structure<a name="html-structure"></a>
 2.1 Document Structure
 The HTML document is structured with typical HTML5 elements. It includes sections for the header, main content, and footer.
 
