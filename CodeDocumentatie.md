@@ -1,7 +1,7 @@
 # Documentatie persoonlijke eenden website Justin Prins
 
-## 1. Introductie
-## 2. HTML Structuur
+## 1. Introductie (#Introductie)
+## 2. HTML Structuur (#htmlStructuur)
 ## 3. CSS Stylinng
 ## 4. JavaScript
 ## 5. Aanvullingen
@@ -9,7 +9,7 @@
 ### 1. Introduction<a name="Introductie"></a>
 This document provides documentation for the codebase of the "Web App From Scratch 23-24". The web app features a personal page for "Justin Prins" and introduces a character named "Mcduck". It includes sections displaying information about the character, a podium section with top individuals, and a footer with contact details.
 
-### 2. HTML Structure<a name="html-structure"></a>
+### 2. HTML Structure<a name="htmlStructuur"></a>
 2.1 Document Structure
 The HTML document is structured with typical HTML5 elements. It includes sections for the header, main content, and footer.
 
@@ -31,17 +31,17 @@ A podium section displaying the top 3 individuals the character would "poop" on.
 2.4 Footer
 The footer includes a contact message with contact details.
 
-3. CSS Styling<a name="css-styling"></a>
+### 3. CSS Styling<a name="css-styling"></a>
 The CSS file (style.css) is organized with various sections to style different elements. Key styling points include:
 
 Background color for the HTML and body.
 Styling for headings (h1, h2, h3, h6) and paragraphs (p).
 Styling for buttons, navigation bar, and podium section.
 Responsive design using media queries for different screen sizes.
-4. JavaScript Logic<a name="javascript-logic"></a>
+### 4. JavaScript Logic<a name="javascript-logic"></a>
 The JavaScript file (script.js) contains logic for fetching data from an external JSON file, toggling the display of information based on button clicks, and fetching random duck images from the Unsplash API. It also includes a scroll event listener to animate the podium section when scrolled into view.
 
-5. Additional Notes<a name="additional-notes"></a>
+### 5. Additional Notes<a name="additional-notes"></a>
 The code includes comments for better readability.
 External libraries or frameworks are not used; the web app is built with HTML, CSS, and vanilla JavaScript.
 The project relies on external data, specifically a JSON file for character properties and the Unsplash API for random duck images.
