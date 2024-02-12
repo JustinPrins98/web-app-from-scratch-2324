@@ -114,3 +114,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Scroll to section 2 when pressing the duck image 
+
+const clickableNavImage = document.getElementById('clickableNavImage');
+
+clickableNavImage.addEventListener('click', function () {
+    const targetSection = document.getElementById('duckImage');
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+
