@@ -34,6 +34,18 @@ Deze sectie bevat 3 karakter waarop de eend op zou willen poepen. Wanneer je op 
 De footer bevat contact informatie ook deze tekst is gegenereerd door chatgpt.
 
 ### 3. CSS Styling
+
+Dingen waar ik vooral mee gewerkt heb binnen CSS tijdens deze opdracht zijn.
+
+Flexboxes: Voorheen gebruikte ik niet zo vaak flexboxen en was ik slecht in het plaatsen van elementen. Ik heb bij het maken van deze CSS veel gewerkt met flexboxes om elementen te plaatsen en flex-wrap om elementen responsive te maken.
+
+Media Queries: Media Queries heb ik nooit eerder toegepast in CSS. Dit keer moest ik het wel gebruiken omdat ik op een bepaald breakpoint de tekst onder elkaar moest krijgen. Dit heeft geholpen om de pagina responsive te krijgen en heeft mij de basis van media queries geleerd.
+
+Hover states: Om buttons
+
+Wat ik de volgende keer anders kan doen.
+- costum variable
+- benamingen
 The CSS file (style.css) is organized with various sections to style different elements. Key styling points include:
 
 Background color for the HTML and body.
