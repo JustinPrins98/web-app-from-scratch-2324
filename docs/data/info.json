@@ -1,0 +1,16 @@
+{
+    "firstName": "Justin",
+    "lastName": "Prins",
+    "avatar_url": "https://avatars.githubusercontent.com/u/118190801?v=4",
+    "age": 25,
+    "city": "Amersfoort",
+    "hobbies": [
+        "Series",
+        "Gamen",
+        "F1 kijken"
+    ],
+    "truthsAndLies": [
+        "Ik ben 2 meter lang",
+        "Ik hou van pizza"
+    ]
+}
