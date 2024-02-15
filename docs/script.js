@@ -1,11 +1,14 @@
+// Section 1 knoppen ID uit html benoemen en koppelen aan een const//
 const outputDiv = document.getElementById("output");
 const showAgeButton = document.getElementById("showAge");
 const showPondButton = document.getElementById("showPond");
 const showBreadButton = document.getElementById("showBread");
 const showCharacterButton = document.getElementById("showCharacter");
 
+// Bij currentkey geef ik aan dat het geen waarde heeft //
 let currentKey = null;
 
+// Hier pas ik on click event listeners toe bij de buttons const's ook geef ik aan welke data er getoond moet worden op de site //
 showAgeButton.addEventListener("click", function () {
     toggleDisplayData("leeftijd");
 });
@@ -22,6 +25,10 @@ showCharacterButton.addEventListener("click", function () {
     toggleDisplayData("karakter");
 });
 
+// Hier maak ik de functie aan die data haalt uit mijn json file, die op github staat. 'return' statement zorgt ervoor dat het resultaat van de
+// fetch functie wordt doorgegeven aan de rest van het programma. .then staat toe dat de code wordt uitgevoerd als !response.ok is wordt er
+// de json file gereturned. Gaat dit fout dan wordt throw getriggerd en om te voorkomen dat er vanaf het begin een error op de site wordt getoond
+// wanneer er iets fout gaat, gebruikt ik .catch. 
 function fetchData() {
     return fetch('https://justinprins98.github.io/web-app-from-scratch-2324/data/eigenschappen.json')
         .then(response => {
