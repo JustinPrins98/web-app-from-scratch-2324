@@ -47,7 +47,11 @@ TBA
 
 [//]: # (|            | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.                                       |             |)
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+https://justinprins98.github.io/web-app-from-scratch-2324/
+
+De webpagina is een persoonlijke pagina van het eendje.
+
+Mijn procesverslag en de documentatie van mijn code staan in mijn wiki, want dit bied meer overzichtelijkheid.
 
 <!-- ☝️ replace this description with a description of your own work -->
 
